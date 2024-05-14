@@ -54,6 +54,7 @@ func main() {
 	api.GET("rtm/:uid/", getRtmToken)
 	api.GET("rte/:channelName/:role/:tokentype/:uid/", getBothTokens)
 	api.Run(":" + port) // listen and serve on localhost:8080
+	//hay i am practice with github
 }
 
 func nocache() gin.HandlerFunc {
@@ -248,3 +249,4 @@ func generateRtcToken(channelName, uidStr, tokentype string, role rtctokenbuilde
 		return "", err
 	}
 }
+
